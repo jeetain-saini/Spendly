@@ -54,7 +54,7 @@ Add a modal to @templates/landing.html that opens when the user clicks
 Requirements:
 
 - Clicking "See how it works" opens a modal overlay
-- Modal contains an embedded YouTube video (use  placeholder YouTube URL https://www.youtube.com/watch?v=P6LkCNRLwCI
+- Modal contains an embedded YouTube video (use  placeholder YouTube URL 
 for now, I will replace it later)
 - Video should be playable inside the modal
 - Clicking the close button OR clicking outside the modal closes it
