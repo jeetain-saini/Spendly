@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% block title %}Privacy Policy — Spendly{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/terms.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<section class="terms-hero">
+    <div class="terms-badge">Legal</div>
+    <h1 class="terms-title">Privacy Policy</h1>
+    <p class="terms-meta">Last updated: June 2026</p>
+</section>
+
+<div class="terms-body">
+
+    <div class="terms-section">
+        <h2>1. Overview</h2>
+        <p>At Spendly, your privacy matters. This Privacy Policy explains what information we collect, how we use it, and the choices you have regarding your data. By using Spendly, you agree to the practices described in this policy.</p>
+    </div>
+
+    <div class="terms-section">
+        <h2>2. Data We Collect</h2>
+        <p>We collect only the information necessary to provide the Service:</p>
+        <ul>
+            <li><strong>Account information</strong> — your name and email address, provided during registration</li>
+            <li><strong>Expense data</strong> — amounts, categories, dates, and descriptions you enter manually</li>
+            <li><strong>Usage data</strong> — basic logs such as login timestamps, used solely for security and debugging purposes</li>
+        </ul>
+        <p>We do not collect payment information, government IDs, or any sensitive personal data beyond what is listed above.</p>
+    </div>
+
+    <div class="terms-section">
+        <h2>3. How We Use Your Data</h2>
+        <p>Your data is used exclusively to operate and improve Spendly. Specifically, we use it to:</p>
+        <ul>
+            <li>Authenticate your account and keep your session secure</li>
+            <li>Store and display your expense records</li>
+            <li>Generate spending summaries and category breakdowns</li>
+            <li>Diagnose technical issues and improve reliability</li>
+        </ul>
+        <p>We do not use your data for advertising, profiling, or any purpose unrelated to the Service.</p>
+    </div>
+
+    <div class="terms-section">
+        <h2>4. Data Storage</h2>
+        <p>Your data is stored in a secure database associated with your account. We take reasonable technical precautions to protect your information from unauthorised access, alteration, or loss.</p>
+        <p>You may delete your account at any time. Upon deletion, all your personal and expense data is permanently removed from our systems and cannot be recovered.</p>
+    </div>
+
+    <div class="terms-section">
+        <h2>5. Data Sharing</h2>
+        <p>We do not sell, rent, or share your personal data with third parties. Your expense records are private to your account and are never disclosed to other users or external organisations.</p>
+        <p>We may disclose data only if required to do so by law or in response to a valid legal request from a competent authority.</p>
+    </div>
+
+    <div class="terms-section">
+        <h2>6. Third-Party Services</h2>
+        <p>Spendly loads fonts from Google Fonts (fonts.googleapis.com). This request is made by your browser and is subject to Google's own privacy policy. No personal or financial data is transmitted to Google as part of this request.</p>
+        <p>We do not integrate with any other third-party analytics, advertising, or tracking services.</p>
+    </div>
+
+    <div class="terms-section">
+        <h2>7. Cookies and Sessions</h2>
+        <p>Spendly uses a single session cookie to keep you logged in. This cookie contains no personal information — it holds only a session identifier that expires when you log out or close your browser.</p>
+        <p>We do not use tracking cookies or any cookies for advertising purposes.</p>
+    </div>
+
+    <div class="terms-section">
+        <h2>8. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. When we do, we will revise the "Last updated" date at the top of this page. Continued use of the Service after changes are posted constitutes your acceptance of the revised policy.</p>
+    </div>
+
+    <div class="terms-section">
+        <h2>9. Contact Us</h2>
+        <p>If you have any questions or concerns about this Privacy Policy or how your data is handled, please contact us through the details provided on our website. We aim to respond to all enquiries within 5 business days.</p>
+    </div>
+
+</div>
+
+{% endblock %}
