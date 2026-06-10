@@ -1,0 +1,206 @@
+/* ------------------------------------------------------------------ */
+/* Hero — single-column centered override                              */
+/* ------------------------------------------------------------------ */
+
+.hero {
+    display: block;
+    text-align: center;
+    padding: 5rem 2rem 4rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.hero-text {
+    max-width: 620px;
+    margin: 0 auto 3.5rem;
+}
+
+/* Badge */
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--accent-light);
+    border: 1px solid #b2d4bb;
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    text-transform: none;
+    padding: 0.4rem 1.1rem;
+    border-radius: 999px;
+    margin-bottom: 2rem;
+}
+
+.hero-badge-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--accent);
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+/* Title */
+.hero-title {
+    font-size: clamp(3rem, 6vw, 4.5rem);
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.hero-title em {
+    display: block;
+    font-style: italic;
+    color: var(--accent);
+}
+
+/* Subtitle */
+.hero-subtitle {
+    font-size: 1.05rem;
+    color: var(--ink-muted);
+    line-height: 1.75;
+    max-width: 100%;
+    margin: 0 auto 2.5rem;
+}
+
+/* Actions — both buttons solid dark */
+.hero-actions {
+    justify-content: center;
+}
+
+.hero-actions .btn-ghost {
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--ink);
+}
+
+.hero-actions .btn-ghost:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--paper);
+}
+
+/* ------------------------------------------------------------------ */
+/* Dashboard mock                                                       */
+/* ------------------------------------------------------------------ */
+
+.hero-dashboard {
+    max-width: 860px;
+    margin: 0 auto;
+    display: block;
+}
+
+.dashboard-window {
+    background: #f0efec;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 32px rgba(0, 0, 0, 0.07);
+}
+
+.dashboard-chrome {
+    background: #e6e5e2;
+    padding: 0.7rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.chrome-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.dot-red    { background: #ff5f57; }
+.dot-yellow { background: #febc2e; }
+.dot-green  { background: #28c840; }
+
+/* Stat cards row */
+.dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+    padding: 1rem 1rem 0.75rem;
+}
+
+.dash-stat {
+    background: #fff;
+    border: 1px solid var(--border-soft);
+    border-radius: 10px;
+    padding: 1rem 1.1rem;
+    text-align: left;
+}
+
+.dash-stat-label {
+    font-size: 0.78rem;
+    color: var(--ink-muted);
+    margin-bottom: 0.3rem;
+    font-weight: 400;
+}
+
+.dash-stat-value {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    color: var(--ink);
+    line-height: 1.1;
+    margin-bottom: 0.25rem;
+}
+
+.dash-stat-note {
+    font-size: 0.8rem;
+    color: var(--ink-muted);
+    font-weight: 500;
+}
+
+.note-danger  { color: var(--danger); }
+.note-success { color: var(--accent); }
+
+/* Category bars */
+.dashboard-bars {
+    padding: 0.85rem 1rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.dash-bar-row {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+}
+
+.dash-bar-label {
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    width: 48px;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.dash-bar-track {
+    flex: 1;
+    height: 9px;
+    background: #e3e2de;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.dash-bar-fill {
+    height: 100%;
+    border-radius: 999px;
+}
+
+.fill-orange { background: #d4960f; }
+.fill-blue   { background: #4a8fd4; }
+.fill-purple { background: #7166c8; }
+
+/* Responsive */
+@media (max-width: 700px) {
+    .dashboard-stats { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 500px) {
+    .hero-actions { flex-direction: column; align-items: center; }
+}
