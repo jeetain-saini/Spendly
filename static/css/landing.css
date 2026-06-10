@@ -196,6 +196,71 @@
 .fill-blue   { background: #4a8fd4; }
 .fill-purple { background: #7166c8; }
 
+/* ------------------------------------------------------------------ */
+/* Video modal                                                          */
+/* ------------------------------------------------------------------ */
+
+.video-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 500;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.video-modal.is-open {
+    display: flex;
+}
+
+.video-modal-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.78);
+}
+
+.video-modal-box {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 860px;
+}
+
+.video-modal-close {
+    position: absolute;
+    top: -2.5rem;
+    right: 0;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0.2rem 0.4rem;
+    opacity: 0.8;
+    transition: opacity 0.15s;
+}
+
+.video-modal-close:hover { opacity: 1; }
+
+.video-modal-frame {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 */
+    background: #000;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.video-modal-frame iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
 /* Responsive */
 @media (max-width: 700px) {
     .dashboard-stats { grid-template-columns: 1fr; }
